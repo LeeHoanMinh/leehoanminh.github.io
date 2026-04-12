@@ -69,3 +69,7 @@ h1, h2, h3, h4, b {
 .academic-block {
 	border-left: 2px #22517d solid;
 }
+
+.academic-activity-block {
+	border-left-color: #22517d;
+}

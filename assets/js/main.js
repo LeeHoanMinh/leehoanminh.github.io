@@ -191,6 +191,16 @@ $(document).ready(function(){
 	// Handles the Publications events
 	// **************************** //
 
+	// Academic photo strip: prev/next scroll (each strip scoped under .academic-photo-strip)
+	$(document).on('click', '.academic-strip-prev', function () {
+		const track = $(this).closest('.academic-photo-strip').find('.academic-photo-strip-track')[0];
+		if (track) track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+	});
+	$(document).on('click', '.academic-strip-next', function () {
+		const track = $(this).closest('.academic-photo-strip').find('.academic-photo-strip-track')[0];
+		if (track) track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+	});
+
 	// Copies the citation to the clipboard
 	$(document).on("click", "#citation", function(){
 		var text = $(this).parent().parent().next()[0].innerHTML;
