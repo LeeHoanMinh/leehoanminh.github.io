@@ -194,6 +194,53 @@ li > .active {
 	object-position: center;
 }
 
+#experiencesContent .academic-photo-img,
+#academicContent .academic-photo-img {
+	cursor: zoom-in;
+}
+
+.experience-photo-modal-img {
+	max-height: 80vh;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.experience-photo-modal-body {
+	position: relative;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-bottom: 2rem;
+}
+
+.experience-photo-modal-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	padding: 0.35rem 0.65rem;
+	line-height: 1;
+	font-size: 1.25rem;
+}
+
+.experience-photo-modal-prev {
+	left: 0.5rem;
+}
+
+.experience-photo-modal-next {
+	right: 0.5rem;
+}
+
+.experience-photo-modal-counter {
+	margin-top: 0.75rem;
+	font-size: 0.95rem;
+}
+
+.experience-photo-modal-nav:disabled {
+	opacity: 0.35;
+	cursor: not-allowed;
+}
+
 .academic-strip-btn {
 	position: absolute;
 	top: 50%;
@@ -325,6 +372,20 @@ li > .active {
 
 .blog-tags > .t-sky {
 	background-color: rgba(37, 197, 223, 0.8);
+}
+
+.experience-tags {
+	margin-top: 0.35rem;
+}
+
+.experience-tag {
+	display: inline-block;
+	border-radius: 100px;
+	padding: 0.15rem 0.55rem;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	background-color: rgba(37, 99, 235, 0.85);
 }
 
 .clickable {
