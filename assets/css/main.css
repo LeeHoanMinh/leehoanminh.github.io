@@ -27,6 +27,37 @@ a {
 	font-size: 16px;
 }
 
+/* ACHIEVEMENTS - Star levels */
+.achievement-stars {
+	display: inline-block;
+	min-width: 5.5em;
+	margin-right: 0.4em;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 0.95em;
+	letter-spacing: 1px;
+}
+
+.achievement-stars.stars-5::before { content: "★★★★★"; color: #dc3545; }
+.achievement-stars.stars-4::before { content: "★★★★☆"; color: #e67e00; }
+.achievement-stars.stars-3::before { content: "★★★☆☆"; color: #d4a017; }
+.achievement-stars.stars-2::before { content: "★★☆☆☆"; color: #28a745; }
+.achievement-stars.stars-1::before { content: "★☆☆☆☆"; color: #9e9e9e; }
+
+.achievement-legend {
+	border-left: 2px #D9DDDC solid;
+	padding-left: 15px;
+}
+
+.achievement-legend-list li {
+	margin-bottom: 0.35rem;
+	font-size: 15px;
+}
+
+.achievement-legend-list .achievement-stars {
+	min-width: 5.5em;
+}
+
 /* GENERAL CSS */
 #main-content {
 	margin-top: 20px;

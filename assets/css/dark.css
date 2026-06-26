@@ -81,3 +81,13 @@ h1, h2, h3, h4, b {
 .student-name {
 	color: #00FFC1;
 }
+
+.achievement-stars.stars-5::before { color: #ff6b6b; }
+.achievement-stars.stars-4::before { color: #ff9f43; }
+.achievement-stars.stars-3::before { color: #ffd93d; }
+.achievement-stars.stars-2::before { color: #51cf66; }
+.achievement-stars.stars-1::before { color: #adb5bd; }
+
+.achievement-legend {
+	border-left-color: #0dcaf0;
+}

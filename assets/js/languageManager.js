@@ -4,8 +4,17 @@ class LanguageManager {
   }
 
   async loadConfig() {
-    const response = await fetch("/assets/js/languages.json");
-    this.config = await response.json();
+    try {
+      const response = await fetch("./assets/js/languages.json");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      this.config = await response.json();
+    } catch (error) {
+      console.error("Error loading language config:", error);
+      this.config = {
+        default: "en",
+        languages: { en: { flag: "https://flagcdn.com/w20/us.png" } },
+      };
+    }
     this.availableLanguages = Object.keys(this.config.languages);
     this.setLanguage(localStorage.getItem("lan") || this.config.default);
   }
@@ -29,8 +38,10 @@ class LanguageManager {
     const lang = localStorage.getItem("lan");
     $(".language *").each(function () {
       const element = $(this);
-      const translation = element.data(lang);
-      element.html(translation);
+      const translation = element.attr(`data-${lang}`);
+      if (translation !== undefined) {
+        element.html(translation);
+      }
     });
   }
 
