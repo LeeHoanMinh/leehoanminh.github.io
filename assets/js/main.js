@@ -8,6 +8,7 @@ $(document).ready(function(){
 	$('#projectsContent').hide();
 	$('#blogContent').hide();
 	$('#academicContent').hide();
+	$('#achievementsContent').hide();
 	$('#particularContent').hide();
 	// $('#photosContent').hide();
 
@@ -98,6 +99,17 @@ $(document).ready(function(){
 
 			// Show current content
 			activateDiv('#academicContent');
+		}
+	});
+
+	// Handle 'Achievements' content
+	$('#achievements').click(function(e) {
+
+		if(!$(e.target).hasClass('active')) {
+			clearActiveLinks();
+			activateLink(e);
+			clearActiveDivs();
+			activateDiv('#achievementsContent');
 		}
 	});
 
