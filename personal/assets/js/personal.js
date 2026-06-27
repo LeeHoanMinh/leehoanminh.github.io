@@ -4,6 +4,7 @@ $(document).ready(function () {
 		achievements: "#achievementsContent",
 		experiences: "#experiencesContent",
 		pastpositions: "#pastpositionsContent",
+		books: "#booksContent",
 	};
 
 	Object.values(sections).forEach((selector) => {

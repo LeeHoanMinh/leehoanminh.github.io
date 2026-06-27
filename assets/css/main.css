@@ -58,6 +58,29 @@ a {
 	min-width: 5.5em;
 }
 
+/* BOOKS - Recommended / liked */
+.book-favorite {
+	display: inline-block;
+	margin-right: 0.35em;
+	vertical-align: middle;
+	font-size: 0.85em;
+	color: #c9a227;
+}
+
+.book-favorite::before {
+	content: "★";
+}
+
+.book-legend-note {
+	border-left: 2px #D9DDDC solid;
+	padding-left: 15px;
+	font-size: 15px;
+}
+
+.book-legend-note .book-favorite {
+	margin-right: 0.25em;
+}
+
 /* GENERAL CSS */
 #main-content {
 	margin-top: 20px;

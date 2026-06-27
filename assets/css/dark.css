@@ -91,3 +91,11 @@ h1, h2, h3, h4, b {
 .achievement-legend {
 	border-left-color: #0dcaf0;
 }
+
+.book-favorite {
+	color: #ffd43b;
+}
+
+.book-legend-note {
+	border-left-color: #0dcaf0;
+}
