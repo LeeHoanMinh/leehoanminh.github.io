@@ -3,6 +3,8 @@ $(document).ready(function () {
 		me: "#meContent",
 		achievements: "#achievementsContent",
 		experiences: "#experiencesContent",
+		candoit: "#candoitContent",
+		cause: "#causeContent",
 		pastpositions: "#pastpositionsContent",
 		books: "#booksContent",
 	};
@@ -139,7 +141,7 @@ $(document).ready(function () {
 		experiencePhotoModal.show();
 	}
 
-	$("#experiencesContent").on("click", ".academic-photo-img", function () {
+	$("#experiencesContent, #candoitContent, #causeContent").on("click", ".academic-photo-img", function () {
 		const images = getExperienceBlockImages($(this));
 		const startIndex = images.findIndex((item) => item.src === $(this).attr("src"));
 		openExperiencePhotoModal(images, startIndex >= 0 ? startIndex : 0);
