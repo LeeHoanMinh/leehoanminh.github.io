@@ -457,6 +457,11 @@ li > .active {
 	opacity: 0.92;
 }
 
+.core-skill-text-block {
+	border-left: 2px #D9DDDC solid;
+	padding-left: 15px;
+}
+
 .clickable {
 	border-radius: 20px;
 	border: 2px #D9DDDC solid;
