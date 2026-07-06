@@ -88,6 +88,16 @@ h1, h2, h3, h4, b {
 .achievement-stars.stars-2::before { color: #51cf66; }
 .achievement-stars.stars-1::before { color: #adb5bd; }
 
+.core-belief-box {
+	border-color: rgba(255, 255, 255, 0.14);
+	background-color: rgba(0, 0, 0, 0.28);
+	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+}
+
+.core-belief-highlight {
+	color: #0dcaf0;
+}
+
 .achievement-legend {
 	border-left-color: #0dcaf0;
 }
