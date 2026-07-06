@@ -431,6 +431,10 @@ li > .active {
 	background-color: rgba(219, 39, 119, 0.85);
 }
 
+.experience-tag--goal {
+	background-color: rgba(245, 158, 11, 0.9);
+}
+
 /* Core beliefs (no photos — boxed highlights) */
 .core-belief-box {
 	border: 2px solid #D9DDDC;

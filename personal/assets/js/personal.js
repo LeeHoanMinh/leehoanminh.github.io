@@ -8,6 +8,7 @@ $(document).ready(function () {
 		pastpositions: "#pastpositionsContent",
 		books: "#booksContent",
 		coreskills: "#coreskillsContent",
+		goals: "#goalsContent",
 	};
 
 	Object.values(sections).forEach((selector) => {
@@ -142,7 +143,7 @@ $(document).ready(function () {
 		experiencePhotoModal.show();
 	}
 
-	$("#experiencesContent, #coreskillsContent, #candoitContent, #causeContent").on("click", ".academic-photo-img", function () {
+	$("#experiencesContent, #coreskillsContent, #goalsContent, #candoitContent, #causeContent").on("click", ".academic-photo-img", function () {
 		const images = getExperienceBlockImages($(this));
 		const startIndex = images.findIndex((item) => item.src === $(this).attr("src"));
 		openExperiencePhotoModal(images, startIndex >= 0 ? startIndex : 0);
